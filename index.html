@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML project</title>
+</head>
+<body>
+    <!-- cellspacing для того чтобы было разделение между строками и столбцами в таблице -->
+    <table cellspacing="18">
+        <td><img src="images.jpeg" width="300" alt="тут моя фотка"></td><!-- так вставляются картинки из локалки, width это ширина картинки -->
+        <td><h1>Константин Филиппов</h1>
+
+            <p><em>Щас учу HTML</em></p>
+        
+        </td>
+    </table>
+    
+	<!-- <br> -->
+	<hr />
+    <h2>Мои соц сети</h2>
+    <ul type="circle"><!-- это не упорядоченный список -->
+        <li>л</li>
+        <li>о</li>
+        <li>л</li>
+        <li> <!-- <a> для того чтобы текст преватить в ссылку, а target="_blank" для того чтобы ссылка открывалась в новой вкладке  -->
+            <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&list=PLqKQF2ojwm3mkPKGH4DRf3CZnmolnIALR&index=3" target="_blank">YT</a>
+        </li> <!-- порядок атрибутов не важен -->
+    </ul>
+    <hr />
+	<h2>Мои хобби</h2>
+    <ol type="I"><!-- это упорядоченный список -->
+        <li>л</li>
+        <li>о</li>
+        <li>л</li>
+    </ol>
+    <h2>Видосы которые мне надо выучить</h2>
+    <a href="YT.html" target="_blank">Посмотреть список</a>
+    <!-- для создания многостраничных сайтов ссылку надо оставить на тот файл, где страница на которую нужно перейти -->
+    <hr />
+    <h2>Опыт работы</h2>
+    <!-- с помощью таблиц можно делать лейауты(разметку страницы)-->
+    <table border="5"> <!-- так создается таблица tr - строки, а td - столбцы-->
+        <tr>
+            <th>Компания</th> <!-- th для заголовков-->
+            <th>Должность</th> 
+        </tr>
+        <tr>
+            <td>microsoft</td> 
+            <td>engineer</td> 
+        </tr>
+        <tr> 
+            <td>google</td> 
+            <td>CEO</td> 
+        </tr>
+    </table>
+
+    <hr />
+    <h2>Связаться со мной</h2>
+    <form action="/"> <!-- label - просто текст  input - поле для ввода(этих типов очень много, там не только text)  placeholder - текст для подсказок  for и id - если они одинаковые то при нажатии на текст переносит на поле для инпута-->
+        <label for="name">Ваше имя: </label>
+        <input type="text" id="name" placeholder="Введите имя...">
+        <br>
+        <label for="email">Ваша почта: </label>
+        <input type="text" id="email" placeholder="Введите почту...">
+        <br>
+        <label for="text">Ваше сообщение: </label>
+        <br>
+        <textarea name="" id="text"></textarea> <!-- тоже что то вроде кнопки -->
+        <br>
+        <input type="submit" value="Связаться">
+        <button>Отправить сообщение</button>
+    </form>
+</body>
+</html>
